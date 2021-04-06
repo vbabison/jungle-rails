@@ -4,6 +4,7 @@
     <h1>My Cart</h1>
   </header>
 
+  <% if (enhanced_cart.length > 0) %>
   <div class="panel panel-default items">
     <table class="table table-bordered">
       <thead>
@@ -48,5 +49,12 @@
       <% end %>
     </div>
   </div>
+  <% end %>
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <div>
+    <p style="font-size: 30px;">Your cart is currently empty.</p>
+    <a style="font-size: 35px; padding: 3px; border-radius: 5px; color: white; background: #7289da;" href="http://localhost:3000/">Continue Shopping <p class='fas fa-long-arrow-alt-right'></p></a>
+  </div>
+
 
 </section>
