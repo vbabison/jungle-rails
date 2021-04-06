@@ -24,10 +24,13 @@
     <aside class="price-sold">
     <p1>SOLD OUT!</p1>
   </aside>
-  <% end %>
-
+  
+  <% else %>
+  
   <aside class="price">
       <%= humanized_money_with_symbol product.price %>
   </aside>
-  
+
+  <% end %>
+
 </article>
