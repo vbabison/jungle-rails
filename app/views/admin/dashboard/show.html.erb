@@ -1,2 +1,21 @@
-<h1>Admin::Dashboard#show</h1>
-<p>Find me in app/views/admin/dashboard/show.html.erb</p>
+<header class="page-header">
+    <h1>Admin Dashboard &raquo; Counts</h1>
+</header>
+
+<section class="admin-products-index">
+
+  
+  <div class="panel panel-default products">
+
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th style="font-size: 25px;">Total product count is <span style="color: #FF5733"><%= Product.count %></span></th>
+          <th style="font-size: 25px;">Total category count is <span style="color: #FF5733"><%= Category.count %></span></th>
+        </tr>
+      </thead>
+    </table>
+
+  </div>
+
+</section>
