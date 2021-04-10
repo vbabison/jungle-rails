@@ -1,0 +1,13 @@
+<h1>Register Below!</h1>
+
+<%= form_for :user, url: '/users' do |f| %>
+<article id="register">
+  First Name: <%= f.text_field :firstname %> <br><br>
+  Last Name: <%= f.text_field :lastname %> <br><br>
+  Email:     <%= f.text_field :email %> <br><br>
+  Password: <%= f.password_field :password %> <br><br>
+  Password Confirmation: <%= f.password_field :password_confirmation %> <br><br>
+  <%= f.submit "Submit" %> <br><br>
+</article>
+
+<% end %>

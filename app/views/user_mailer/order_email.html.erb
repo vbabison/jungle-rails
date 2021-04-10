@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Thank you for your order. Email used : @order.email</h1>
+    <p>Order ID : <%= @order.id %> , Detials below </p>
+
+    <ul>
+        <% @lineitems.each do |product| %>
+          <li><%= product.name %> x <%= product.quantity %></li>
+        <% end %>
+    </ul>
+    <p> Total: <%= @order.total_cents/100.00 %> </p>
+
+    <p>Have a niceday </p>
+  </body>
+</html>
