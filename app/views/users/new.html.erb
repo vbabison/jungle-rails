@@ -1,6 +1,14 @@
 <h1>Register Below!</h1>
 
-<%= form_for :user, url: '/users' do |f| %>
+<% if @user.errors.any? %>
+  <% @user.errors.full_messages.each do |message|%>\
+  <h3><%= message %> </h3>
+  <%end%>
+<%end%>
+
+</br>
+
+<%= form_for :@user, url: '/users' do |f| %>
 <article id="register">
   First Name: <%= f.text_field :firstname %> <br><br>
   Last Name: <%= f.text_field :lastname %> <br><br>
